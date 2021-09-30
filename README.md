@@ -24,3 +24,8 @@ Open your browser at http://localhost:8888 or simple type ```boxfuse open hello:
 
 
 this is the testing git and maven integration with jenkins
+
+1234567890
+0987654321
+
+testing commit
