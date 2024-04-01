@@ -1,15 +1,17 @@
 pipeline {
     agent any
-    stages {
-        stage ('git checkout')
+    stages{
+        stage('git checkout'){
             steps{
                 git branch: 'main', URL: 'https://github.com/shikhadevops/boxfuse-sample-java-war-hello.git'
+            }
         }
-        stage ('Build')
+        stage('Build'){
             steps {
-                sh 'mvn install clean package' 
-             }
+                script {
+                    sh 'mvn install clean package'
+                }
+            } 
+        }
     }
-
-}
-    
+} 
