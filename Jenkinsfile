@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('git checkout'){
             steps{
-                git branch: 'main', URL: 'https://github.com/shikhadevops/boxfuse-sample-java-war-hello.git'
+                git 'https://github.com/shikhadevops/boxfuse-sample-java-war-hello.git'
             }
         }
         stage('Build'){
@@ -14,4 +14,4 @@ pipeline {
             } 
         }
     }
-} 
+}
